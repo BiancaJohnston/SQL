@@ -1,0 +1,25 @@
+----Create Clothing T-shirt Store Database and Stats
+
+CREATE TABLE shirts (id INTEGER PRIMARY KEY, name TEXT, size INTEGER, colour TEXT, sleevestyle TEXT, price INTEGER);
+
+INSERT INTO shirts (id, name, size, colour, sleevestyle, price) VALUES
+(1, 'ladies', 'S', 'white', 'long', 90),
+(2, 'ladies', 'M', 'white', 'short', 80),
+(3, 'ladies', 'L', 'black', "long", 95),
+(4, "ladies", "L", "white", "long", 100),
+(5, "ladies", "L", "pink", "long", 100),
+(6, "ladies", "L", "pink", "short", 60),
+(7, "ladies", "L", "red", "long", 100),
+(8, "ladies", "L", "red", "short", 100),
+(9, "ladies", "M", "red", "short", 100),
+(10, "ladies", "S", "blue", "short", 100),
+(11, "ladies", "M", "blue", "short", 100),
+(12, "ladies", "L", "blue", "short", 100),
+(13, "ladies", "S", "blue", "long", 100),
+(14, "ladies", "M", "yellow", "short", 100),
+(15, "ladies", "L", "yellow", "long", 100)
+;
+
+SELECT * FROM shirts WHERE sleevestyle = 'long' order by 
+price asc
+;
